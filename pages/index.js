@@ -18,7 +18,7 @@ export async function getStaticProps(){
 }
 
 export default function Recipes({recipes}) {
-  if(!recipe) return <Skeleton />
+  if(!recipes) return <Skeleton />
   return (
     <div className="recipe-list">
       {recipes.map(recipe =>(
